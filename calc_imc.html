@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Lexend+Exa:wght@600&display=swap');
+  </style>
+  <link rel="stylesheet" href="calc_imc.css">
+  <title>Calculadora de IMC</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="#">
+        <h1>My Projects</h1>
+      </a>
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      
+      <ul class="nav-list">
+        <li><a class="Inicio" href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="info">
+      <h1>CALCULADORA DE IMC</h1>
+      <p class="imc">
+        IMC = Peso ÷ (Altura × Altura) <br>
+      </p>
+
+      <p class="exemplo">
+        IMC = 80 kg ÷ (1,80 m × 1,80 m) = 24,69 kg/m2 (Peso ideal)
+      </p>
+      
+    </div>
+    
+    <div class="calculadora">
+      <div class="div_peso" >
+        <label for="peso"  title="Kilogramas">Informe o seu peso </label>
+        <input id='peso' type="text" placeholder="digite seu peso aqui">
+      </div>
+
+      <div class="div_altura" >
+        <label for="altura" title="Centímetros">Informe a sua altura </label>
+        <input id='altura' type="text" placeholder="digite sua altura aqui">
+      </div>
+
+      <button id='calcular'>
+        CALCULAR
+      </button>
+
+      <div>
+        <h3>Seu IMC aparecerá aqui!</h3>
+        <span id='resultado'>IMC</span>
+      </div>
+    </div>
+  </main>
+
+  <div class="adicional">
+    <table border="4">
+      <tr>
+        <td>Classificação</td> 
+        <td>IMC</td>
+      </tr>
+      <tr>
+        <td>Abaixo do Peso</td>
+        <td>< 18,5</td>
+      </tr>
+      <tr>
+        <td>Peso Normal</td>
+        <td>18,5 - 24,9</td>
+      </tr>
+      <tr>
+        <td>Sobrepeso</td>
+        <td>25 - 29,9</td>
+      </tr>
+      <tr>
+        <td>Obesidade I</td>
+        <td>30 - 34,9</td>
+      </tr>
+      <tr>
+        <td>Obesidade II</td>
+        <td>35 - 39,9</td>
+      </tr>
+      <tr>
+        <td>Obesidade III</td>
+        <td>=>40</td>
+      </tr>
+    </table>
+  </div>
+  
+  <script src="calc_imc.js"></script>
+</body>
+
+</html>

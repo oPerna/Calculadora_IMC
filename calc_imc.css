@@ -1,0 +1,168 @@
+*, ::before, ::after {  
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-1: #18161f;
+    --cor-2: #242030;
+    --cor-3: #7b68ee;
+    --cor-4: #c0b5ff;
+}
+
+body {
+    background-color: #242030;
+    
+    overflow-x: hidden;
+    
+    font-family: 'Average Sans', sans-serif;
+}
+
+
+/* header */
+
+nav {
+    height: 8vh;
+    
+    background-color: var(--cor-1);
+    box-shadow: 0px 5px 10px #000;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-left: 5px;
+    
+    color: var(--cor-3);
+    
+    text-align: left;
+    transition: ease-out 0.2s;
+}
+
+.logo:hover {
+    color: var(--cor-4);
+}
+
+main {
+    width: 80vw;
+    padding: 1.5em;
+    border-radius: 20px;
+
+    color: #fff;
+    background-color: var(--cor-1);
+    box-shadow: 15px 15px 2px #00000081;
+
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 2em 0;
+    color: var(--cor-4);
+    letter-spacing: .2em;
+}
+
+.imc {
+    font-size: 20px;
+}.imc::before {
+    content: 'Como se calcula o Imc?';
+    font-size: 22px;
+    margin: .5em 0;
+    color: var(--cor-3);
+    display: block;
+}
+
+.exemplo {
+    font-size: 20px;
+}.exemplo::before {
+    content: 'Exemplo:';
+    font-size: 22px;
+    margin: .5em 0;
+    color: var(--cor-3);
+    display: block;
+}
+
+.calculadora {
+    width: 55%;
+    height: 60vh;
+    border-radius: 10px;
+    padding: 1em;
+    gap: 1.5em;
+    
+    background-color: var(--cor-2);
+    box-shadow: 2px 2px 10px #000;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.div_peso label::after {
+    content: '(kg)';
+    font-size: 20px;
+    color: #c0b5ff;
+}
+
+.div_altura label::after {
+    content: '(cm)';
+    font-size: 20px;
+    color: #c0b5ff;
+}
+
+input {
+    width: 10.5em;
+    padding: .3em;
+    margin: .2em;
+    border-radius: 5px;
+    
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    width: 13vw;
+    height: 5vh;
+    border-radius: 5px;
+
+    color: #fff;
+    background-color: var(--cor-3);
+    box-shadow: 2px 2px 10px #000;
+
+    align-self: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}button:hover {
+    color: #000;
+    background-color: var(--cor-4);
+}button:active {
+  background-color: var(--cor-3);
+  box-shadow: 0 0 5px #666;
+  transform: translateY(3px);
+}
+
+h3 {
+    margin: 1em 0;
+}
+
+span {
+    font-size: 40px;
+    padding: .2em;
+    border-radius: 10px;
+    
+    color: var(--cor-4);
+    background-color: var(--cor-1);
+    box-shadow: 2px 2px 5px #7b68ee;
+}
