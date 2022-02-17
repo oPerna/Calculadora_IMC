@@ -50,12 +50,12 @@
     <div class="calculadora">
       <div class="div_peso" >
         <label for="peso"  title="Kilogramas">Informe o seu peso </label>
-        <input id='peso' type="text" placeholder="digite seu peso aqui">
+        <input id='peso' type="number" placeholder="digite seu peso aqui">
       </div>
 
       <div class="div_altura" >
         <label for="altura" title="Centímetros">Informe a sua altura </label>
-        <input id='altura' type="text" placeholder="digite sua altura aqui">
+        <input id='altura' type="number" placeholder="digite sua altura aqui">
       </div>
 
       <button id='calcular'>
@@ -70,36 +70,59 @@
   </main>
 
   <div class="adicional">
-    <table border="4">
-      <tr>
+    <table>
+      <tr class="top">
         <td>Classificação</td> 
         <td>IMC</td>
       </tr>
+
       <tr>
-        <td>Abaixo do Peso</td>
+        <td class="azul">Abaixo do Peso</td>
         <td>< 18,5</td>
       </tr>
+
       <tr>
-        <td>Peso Normal</td>
+        <td class="verde">Peso Normal</td>
         <td>18,5 - 24,9</td>
       </tr>
+      
       <tr>
-        <td>Sobrepeso</td>
+        <td  class="amarelo">Sobrepeso</td>
         <td>25 - 29,9</td>
       </tr>
+      
       <tr>
-        <td>Obesidade I</td>
+        <td class="laranja">Obesidade I</td>
         <td>30 - 34,9</td>
       </tr>
+
       <tr>
-        <td>Obesidade II</td>
+        <td class="vermelho">Obesidade II</td>
         <td>35 - 39,9</td>
       </tr>
+
       <tr>
-        <td>Obesidade III</td>
-        <td>=>40</td>
+        <td class="preto">Obesidade III</td>
+        <td>=> 40</td>
       </tr>
     </table>
+
+    <div class="box_legenda">
+      <h2>Legendas</h2>
+
+      <div class="box_boneco">
+        <div class="head" id="head"></div>
+        <div class="container_body">
+          <div class="arms" id="left_arms"></div>
+          <div class="body" id="body"></div>
+          <div class="arms" id="right_arms"></div>
+        </div>
+        <div class="container_legs">
+          <div class="legs" id="left_legs"></div>
+          <div class="legs" id="right_legs"></div>
+        </div>
+      </div>
+    </div>
   </div>
   
   <script src="calc_imc.js"></script>
