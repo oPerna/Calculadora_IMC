@@ -116,17 +116,29 @@ h1 {
 
 .div_altura label::after {
     content: '(cm)';
-    font-size: 20px;
+    font-size: 22px;
     color: #c0b5ff;
 }
 
+label {
+    font-size: 20px;
+}
+
 input {
-    width: 10.5em;
+    width: 5.5em;
     padding: .3em;
     margin: .2em;
     border-radius: 5px;
+    font-size: 24px;
+    border-bottom: 2px solid #fff;
+
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.13) ;
     
-    border: none;
+    font-family: "clockicons";
+    border-right: none;
+    border-top: none;
+    border-left: none;
     outline: none;
     text-align: center;
 }
@@ -248,8 +260,16 @@ tr,td {
     display: flex;
     justify-content: center;
     align-items: center;
+}.box_boneco:hover #left_arms {
+    transform: rotate(30deg) translateX(-20px) translateY(5px);
+    z-index: -1;
+}.box_boneco:hover #right_arms {
+    transform: rotate(-30deg) translateX(20px) translateY(5px);
+    
 }
-
+.head, .body, .arms, .legs {
+    transition: .2s ease-out;
+}
 .head {
     width: 55px;
     height: 55px;
@@ -285,6 +305,8 @@ tr,td {
     border: solid 1px #fff;
     background-color: var(--cor-3);
 }
+
+
 
 /* .box_boneco{
     gap: 3px;
